@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #ff7a7a;
+  background-image: url("/src/assets/bg-intro-desktop.png");
+  font-family: "Poppins", sans-serif;
+}
+
+.flex-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  height: 100vh;
+}
+
+h1,
+p {
+  color: #ffffff;
+}
+
+span {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  html {
+    background-image: url("/src/assets/bg-intro-mobile.png");
+  }
+  body {
+    padding: 0 1rem;
+  }
+  .flex-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+.left-text-container {
+  max-width: 500px;
+  margin: 3rem;
+}
+
+.left-text-container h1 {
+  line-height: 3rem;
+  font-size: 3rem;
+}
+
+.left-text-container p {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .left-text-container {
+    margin-top: 15rem;
+    text-align: center;
+  }
+  .left-text-container h1 {
+    font-size: 2rem;
+  }
+  .left-text-container p {
+    min-height: 150px;
+    min-width: 320px;
+  }
+}
+
+.form-container {
+  text-align: center;
+}
+
+.form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  border-radius: 0.8rem;
+  padding: 1rem 2.5rem;
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.upper-form-container {
+  background-color: #6055a5;
+  border-radius: 0.55rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.error-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  visibility: hidden;
+}
+
+.error-container .error-text {
+  color: #ff7a7a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.error-container .error-icon-hidden {
+  position: relative;
+  bottom: 3rem;
+  left: 22rem;
+}
+
+input {
+  padding: 1rem;
+  border: 1.8px solid #b9b6d3;
+  border-radius: 0.4rem;
+}
+
+input::-webkit-input-placeholder, input[type] {
+  font-weight: 700;
+}
+
+input:-ms-input-placeholder, input[type] {
+  font-weight: 700;
+}
+
+input::-ms-input-placeholder, input[type] {
+  font-weight: 700;
+}
+
+input::placeholder, input[type] {
+  font-weight: 700;
+}
+
+.input-showError {
+  border: 3px solid #ff7a7a;
+}
+
+.under-form-text {
+  color: #b9b6d3;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.under-form-text span {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+.form-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #38cc8c;
+  -webkit-box-shadow: 0 5px #34b27b;
+          box-shadow: 0 5px #34b27b;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.form-btn:hover {
+  background-color: rgba(56, 204, 140, 0.8);
+  -webkit-box-shadow: 0 5px #38cc8c;
+          box-shadow: 0 5px #38cc8c;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  form {
+    max-width: 390px;
+  }
+  .upper-form-container {
+    padding: 2rem 0 2.5rem 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
